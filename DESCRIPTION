@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "jwokaty@users.noreply.github.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: A template for creating packages.
+Description: A template for creating R packages.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

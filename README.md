@@ -6,7 +6,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of packagetemplate is to provide a template for packages.
+The goal of packagetemplate is to provide a template for R packages.
 
 ## Installation
 
