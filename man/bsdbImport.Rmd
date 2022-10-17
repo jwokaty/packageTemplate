@@ -1,0 +1,52 @@
+---
+title: "bugsigdbr package custom function"
+author:
+- name: Calvince
+  affiliation: Otieno
+  email: calvnce@users.noreply.github.com
+package: packageName
+output:
+  BiocStyle::html_document
+abstract: |
+  bsdb_import is a function that enables the user to obtain published microbial 
+  signatures from bugsigdb.org database using bugsigdb. 
+  The obtained microbes is filtered based on the user inputs.
+vignette: |
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+# Getting started
+
+To enable the _bsdb_import()_ function to work correctly ensure that you have the following packages installed:
+    
+    package: bugsigdbr
+
+
+# Setup
+
+To use the _bsdb_import()_ first do the following:
+
+```{r}
+install.packages(c("devtools", "BiocManager"))
+# Use Bioconductor devel with BiocManager; we always Bioconductor devel with this project
+BiocManager::install(version = "devel")
+
+library(bugsigdbr)
+```
+
+
+# Usage
+## Case 1: default arguments
+```{r}
+source('../R/bsdbImport.R')
+bsgdb <- bsdb_import()
+head(bsgdb[10:15])
+```
+
+## Case 2: user defined arguments
+```{r}
+bsgdb <- bsdb_import(location = 'China')
+head(bsgdb[10:15])
+```
