@@ -1,4 +1,4 @@
 library(testthat)
-library(packagetemplate)
+library(outreachycontribution)
 
-test_check("packagetemplate")
+test_check("outreachy_contribution")
