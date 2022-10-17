@@ -25,7 +25,7 @@ This is a basic example which shows how to use bsdb_import:
 ``` r
 library(outreachycontribution)
 bsgdb <- bsdb_import(location = 'China')
-print(head(bsdb_import(location = "China")[10:15]))
+head(bsdb_import(location = "China")[10:15])
 
       Experiment Location of subjects Host species Body site      UBERON ID Condition
 256 Experiment 2                China Homo sapiens     feces UBERON:0001988   obesity
